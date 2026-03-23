@@ -1,0 +1,39 @@
+{
+  "name": "ai-coding-dojo-mcp-poc-fx",
+  "version": "1.0.0",
+  "description": "Custom MCP server for getting the best exchange rates from Czech banks (CSAS, KB, RB)",
+  "main": "dist/index.js",
+  "bin": {
+    "czech-banks-fx": "dist/index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc && node dist/index.js",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petomasek-cen39198/ai-coding-dojo-mcp-poc-fx.git"
+  },
+  "keywords": ["mcp", "exchange-rates", "czech-banks", "csas", "kb", "rb"],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/petomasek-cen39198/ai-coding-dojo-mcp-poc-fx/issues"
+  },
+  "homepage": "https://github.com/petomasek-cen39198/ai-coding-dojo-mcp-poc-fx#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "axios": "^1.13.6",
+    "cheerio": "^1.2.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/cheerio": "^0.22.35",
+    "@types/node": "^25.5.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.2"
+  }
+}
